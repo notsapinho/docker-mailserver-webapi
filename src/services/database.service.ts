@@ -1,4 +1,4 @@
-import { bytes, fs, path, readline } from "../../deps.ts";
+import { bytes, fs, path, readLines } from "../../deps.ts";
 import { InternalServerErrorException } from "../exceptions/internal-server.exception.ts";
 import { utils } from "../utils/utils.ts";
 import { EnvService } from "./env.service.ts";
@@ -101,7 +101,7 @@ export class DatabaseService {
     const getFile = await Deno.open(this.databasePath, { read: true });
 
     const encoded = utils.textEncode(text);
-    for await (const str of readline(getFile)) {
+    for await (const str of readLines(getFile)) {
       if (bytes.indexOfNeedle(str, encoded) >= 0) {
         const decodedText = utils.textDecode(str);
         if (!options?.split) {
