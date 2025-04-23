@@ -13,7 +13,7 @@ info:
     
     In order to use this API you need a API key and add your IP
     address to the whitelist of allowed IPs this can be done by add new environment variable
-    <strong>WEB_API_KEY</strong> and <strong>WEB_API_WHITELISTED_IP</strong> in your compose file.
+    <strong>WEB_API_KEY</strong> in your compose file.
 
   title: Docker Mailserver - Web API
   version: "1.0.0"
