@@ -24,7 +24,7 @@ app.use(
   demo({ enable: env.DENO_ENV == "demo" }),
   apiKeyAuth({
     key: env.WEB_API_KEY,
-    whitelist: env.WEB_API_WHITELISTED_IP.split(","),
+    whitelist: env.WEB_API_WHITELISTED_IP?.length ? env.WEB_API_WHITELISTED_IP.split(",") : null,
   })
 );
 app.use(
