@@ -8,7 +8,7 @@
 #
 # 1. Create new file user-patches.sh in config folder.
 # 2. Add this script inside user-patches.sh.
-#   $ curl -fsSL https://raw.githubusercontent.com/bramanda48/docker-mailserver-webapi/master/scripts/user-patches.sh | bash
+#   $ curl -fsSL https://raw.githubusercontent.com/notsapinho/docker-mailserver-webapi/master/scripts/user-patches.sh | bash
 # 3. By default, this application will run on port 3000. You need to add the port to docker-compose.yml.
 # 4. Redeploy the container.
 #
