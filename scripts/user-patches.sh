@@ -235,10 +235,10 @@ done
 DOWNLOAD_URL=""
 case "$CHANNEL" in
 	stable)
-    DOWNLOAD_URL="https://github.com/bramanda48/docker-mailserver-webapi/releases/latest/download/docker-mailserver-webapi.zip"
+    DOWNLOAD_URL="https://github.com/notsapinho/docker-mailserver-webapi/releases/latest/download/docker-mailserver-webapi.zip"
 		;;
 	nightly)
-		DOWNLOAD_URL="https://nightly.link/bramanda48/docker-mailserver-webapi/workflows/build-deno/master/docker-mailserver-webapi.zip"
+		DOWNLOAD_URL="https://nightly.link/notsapinho/docker-mailserver-webapi/workflows/build-deno/master/docker-mailserver-webapi.zip"
 		;;
 	*)
 		_log 'error' "unknown CHANNEL '$CHANNEL': use either stable or nightly."
